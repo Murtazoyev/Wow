@@ -1,0 +1,140 @@
+// Start Main
+#main{
+ margin-top: 20px;
+
+ .samemargin{
+     margin-top: 25px;;
+ }
+}
+
+
+#primaryproducts-content{
+ .primarycontent-items{
+     background-color: $white-color;
+     border-radius: 3px;
+     border: 1px solid #eeeeee;
+     .bestsug-item{
+         padding: 10px;
+         height: 318px;
+         cursor: pointer;
+         border-right: 1px solid #eeeeee;
+     }
+     .bestsug-item:last-child{
+         border-right: none;
+     }
+     
+     .bestsug-item:hover{
+         .maddtocart{
+             display: block;
+         }
+     }
+    a{
+      .bestsug-item__img{
+          img{
+              width: 100%;
+          }
+      }
+      .mproduct-title{
+          margin:15px 0 10px 0;
+          height: 33px;
+          h4{
+              font-size: 14px;
+              color: $sidebaritem-color;
+              margin: 0 0 10px 0;
+          }
+      }
+      .mprice-title{
+          span{
+             strong{
+                 color: $price-color;
+                 font-size: 18px;
+             }
+             small{
+                 color:$sidebaritem-color;
+                 font-size: 12.6px;
+             }
+          }
+      }
+      .msale-info{
+         position: absolute;
+         top: 6px;
+         left: 0;
+         background-color: #ea2d33;
+         color:$white-color;
+         padding: 0px 6px 0 4px;
+         border-radius: 0 .1875rem .1875rem 0;
+         span{
+             font-size: 14px;
+         }
+      }
+      .maddtocart{
+          margin-top: 15px;
+          text-align: center;
+          padding: 2px 8px;
+          border: 1px solid $price-color;
+          border-radius: 4px;
+          display: none;
+          @include transitionstyle(all,.2s,ease,0s);
+          span{
+              font-size: 14px;
+              color: $price-color;
+              font-weight: 500;
+              @include transitionstyle(all,.2s,ease,0s);
+              i{
+                  font-size: 15px;
+              }
+          }
+      }
+      .maddtocart:hover{
+          background-color: $price-color;
+          span{
+              color:$white-color;
+          }
+      }  
+    }
+ }
+ .nextproduct{
+     a{
+         background-color: $price-color;
+         color: $white-color;
+         font-size: 15px;
+         padding: 7px 15px;
+         border-radius: 4px;
+         i{
+             font-size: 14px;
+         }
+     }
+ }
+ 
+}
+.primary-title{
+ margin-bottom: 15px;
+ &__info{
+     h4{
+         font-size: 16px;
+         color: $black-color;
+         font-weight: 400;
+         a{
+             font-size: 14px;
+             padding: 3px 5px 4px 5px;
+             color: #00A13C;
+             background-color: rgba(0, 161, 60, 0.06);
+             font-weight: normal;
+             border-radius: 5px;
+             border: 1px solid rgba(0, 161, 60, 0.06);
+             @include transitionstyle(all,.2s,ease,0s);
+             i{
+                 font-size: 12px;
+                 font-weight: 400;
+             }
+         }
+         a:hover{
+             border: 1px solid $price-color;
+         }
+     }
+ }
+}
+
+
+// End Main
+

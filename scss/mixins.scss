@@ -1,0 +1,17 @@
+@mixin  transitionstyle($tp,$td,$tmf,$tdl){
+ transition: $tp $td $tmf $tdl;
+}
+@mixin samebtnstyle {
+ padding: 3px 5px 4px 5px;
+ font-size: 14px;
+ color: $price-color;
+ background-color: rgba(0,161,60,.06);
+ font-weight: normal;
+ border-radius: 5px;
+ border: 1px solid rgba(0,161,60,.06);
+ i{
+     color: $price-color;
+     font-size: 11px;
+     font-weight: 500;
+ }
+}

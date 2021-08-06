@@ -1,0 +1,271 @@
+$primarybg-color:#04B947;
+$headings-color:#455463;
+$black-color:#000000;
+$white-color:#ffffff;
+$sidebaritem-color:#616161;
+$quantity-color:#94A1AD;
+$footertext-color:#1DB74D;
+$price-color:#00A13C;
+$network-color:#1B1919;
+$topcontactitems-color:#757575;
+$bodybg-color:#fafafa;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $bodybg-color;
+}
+
+@import'mixins';
+@import'header';
+@import'main';
+@import'footer';
+
+@media (max-width: 575.98px){
+    #FirstTopStickyHeader,.SecondTopStickyHeader{
+        display: none;
+    }
+    .side-bar-list,.left-side-bar,.products-content-full-info{
+        display: none;
+    }
+   #responsive-header{
+       display: flex;
+   }
+   #MainHeader{
+        margin-top: 70px;
+        padding: 0 9px;
+    }
+    .MainHeader-content{
+        .slider-info{
+            height: 335px;
+           .carousel-inner{
+               height: 335px;
+               .carousel-item{
+                   height: 100%;
+                   width: 100%;
+                   img{
+                       height: 100%;
+                       width: 100%;
+                   }
+               }
+           } 
+        }
+    }
+    #primaryproducts-content{
+        .primarycontent-items{
+          .bestsug-item:nth-child(6){
+              display: none;
+          }
+          .bestsug-item:nth-child(5){
+              display: none;
+          }
+          .bestsug-item:nth-child(4){
+              display: none;
+          }
+          .bestsug-item:nth-child(3){
+              display: none;
+          }
+          .bestsug-item:nth-child(2){
+              border-right: none;
+          }
+          .bestsug-item{
+            height: 340px;
+          }
+        }
+    }
+    footer{
+        display: none;
+    }
+} 
+
+@media (min-width: 576px){
+    #FirstTopStickyHeader,.SecondTopStickyHeader{
+        display: none;
+    }
+    .side-bar-list,.left-side-bar,.products-content-full-info{
+        display: none;
+    }
+   #responsive-header{
+       display: flex;
+   }
+   #MainHeader{
+    margin-top: 70px;
+    }
+    #primaryproducts-content{
+        .primarycontent-items{
+          .bestsug-item:nth-child(6){
+              display: none;
+          }
+          .bestsug-item:nth-child(5){
+              display: none;
+          }
+          .bestsug-item:nth-child(4){
+              display: none;
+          }
+          .bestsug-item:nth-child(3){
+              display: block;
+              border-right: none;
+          }
+          .bestsug-item{
+            height: 310px;
+          }
+        }
+    }
+    footer{
+        display: none;
+    }
+} 
+@media (min-width: 768px){
+    #FirstTopStickyHeader,.SecondTopStickyHeader{
+        display: none;
+    }
+    .side-bar-list,.left-side-bar,.products-content-full-info{
+        display: none;
+    }
+   #responsive-header{
+       display: flex;
+   }
+   #MainHeader{
+    margin-top: 70px;
+    }
+    .MainHeader-content{
+        .slider-info{
+            height: 465px;
+           .carousel-inner{
+               height: 465px;
+               .carousel-item{
+                   height: 100%;
+                   width: 100%;
+                   img{
+                       height: 100%;
+                       width: 100%;
+                   }
+               }
+           } 
+        }
+    }
+    #primaryproducts-content{
+        .primarycontent-items{
+          .bestsug-item:nth-child(6){
+              display: none;
+          }
+          .bestsug-item:nth-child(5){
+              display: none;
+          }
+          .bestsug-item:nth-child(4){
+                display: block;
+                border-right: none;
+           }
+           .bestsug-item:nth-child(3){
+            border-right: 1px solid #eeeeee;
+        }
+          .bestsug-item{
+                height: 310px;
+           }
+        }
+    }
+    footer{
+        display: block;
+    }
+}
+@media (min-width: 992px){
+    #FirstTopStickyHeader,.SecondTopStickyHeader{
+        display: none;
+    }
+    .side-bar-list{
+        display: none;
+    }
+   #responsive-header,.products-content-full-info{
+       display: flex;
+   }
+   #MainHeader{
+       margin-top: 70px;
+   }
+   .left-side-bar{
+       display: block;
+   }
+   .MainHeader-content{
+    .slider-info{
+        height: 395px;
+       .carousel-inner{
+           height: 395px;
+           .carousel-item{
+               height: 100%;
+               width: 100%;
+               img{
+                   height: 100%;
+                   width: 100%;
+               }
+           }
+       } 
+    }
+  }
+  #primaryproducts-content{
+    .primarycontent-items{
+        .bestsug-item:nth-child(6){
+            display: block;
+        }
+        .bestsug-item:nth-child(5){
+            display: block;
+        }
+        .bestsug-item:nth-child(4){
+            display: block;
+            border-right: 1px solid #eeeeee;
+        }
+        .bestsug-item{
+            height: 318px;
+        }
+        .bestsug-item:nth-child(2){
+            border-right: 1px solid #eeeeee;
+        }
+      }
+    }
+ 
+   
+}
+@media (min-width: 1200px){
+    #FirstTopStickyHeader,.SecondTopStickyHeader{
+        display: flex;
+    }
+    .side-bar-list {
+        display: block;
+    }
+    #responsive-header{
+        display: none;
+    }
+    #MainHeader{
+        margin-top: 140px;
+    }
+    .slider-info{
+        height: 395px;
+       .carousel-inner{
+           height: 395px;
+           .carousel-item{
+               height: 100%;
+               width: 100%;
+               img{
+                   height: 100%;
+                   width: 100%;
+               }
+           }
+       } 
+    }
+    #primaryproducts-content{
+        .primarycontent-items{
+          .bestsug-item:nth-child(6){
+              display: block;
+          }
+          .bestsug-item:nth-child(5){
+              display: block;
+          }
+          .bestsug-item:nth-child(4){
+              display: block;
+          }
+          .bestsug-item{
+              height: 318px;
+          }
+        }
+    }
+    
+}
